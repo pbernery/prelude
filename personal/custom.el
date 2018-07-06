@@ -71,7 +71,10 @@
  '(package-selected-packages
    (quote
     (spacemacs-themes zop-to-char zenburn-theme which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line operate-on-number move-text magit imenu-anywhere ibuffer-projectile hl-todo guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell ember-mode editorconfig easy-kill discover-my-major diminish diff-hl crux browse-kill-ring beacon anzu ace-window)))
- '(safe-local-variable-values (quote ((flycheck-disabled-checkers emacs-lisp-checkdoc)))))
+ '(safe-local-variable-values
+   (quote
+    ((eval setq js-switch-indent-offset 0)
+     (flycheck-disabled-checkers emacs-lisp-checkdoc)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

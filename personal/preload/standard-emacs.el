@@ -1,0 +1,12 @@
+;; Put temp files outside file folder
+;; Fix for Ember Broccoli
+;; https://ember-cli.com/user-guide/#emacs
+(setq backup-directory-alist `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
+(setq create-lockfiles nil)
+
+;; Window size
+(when window-system (set-frame-size (selected-frame) 104 58))
+
+;; macOS specific
+(setq-default mac-right-option-modifier nil)

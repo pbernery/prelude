@@ -54,11 +54,10 @@
 ;;;;
 ;; Keys
 
-;; Rebound s-/, because it is bound to hippie-expand by default
-(global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line)
+;; Rebound s-/, because it is bound to hippie-expand by prelude-macos
+(define-key prelude-mode-map (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
 
-;;;;
 ;; Custom configuration
 
 (custom-set-variables

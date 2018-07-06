@@ -10,3 +10,6 @@
 
 ;; macOS specific
 (setq-default mac-right-option-modifier nil)
+
+;; Feature activation
+(global-linum-mode 1)

@@ -7,6 +7,7 @@
                             all-the-icons-ivy
                             ember-mode
                             ibuffer-projectile
+                            magit-todos
                             neotree
                             spacemacs-theme))
 
@@ -25,6 +26,9 @@
 ;;;; ibuffer
 (with-eval-after-load 'ibuffer-mode
   (ibuffer-projectile-set-filter-groups))
+
+;;;; magit
+(magit-todos-mode)
 
 ;;;; neotree
 (setq neo-theme 'icons)

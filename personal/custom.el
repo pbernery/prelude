@@ -58,6 +58,8 @@
 (setq ruby-insert-encoding-magic-comment nil)
 
 ;;;; web-mode
+(add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
+
 (with-eval-after-load 'web-mode
   (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 

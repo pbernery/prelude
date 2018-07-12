@@ -59,6 +59,7 @@
 ;; Rebound s-/, because it is bound to hippie-expand by prelude-macos
 (define-key prelude-mode-map (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
+(global-set-key (kbd "M-t") 'neotree-project-dir)
 
 ;; Custom configuration
 

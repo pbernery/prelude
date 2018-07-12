@@ -29,6 +29,7 @@
 ;;;; neotree
 (setq neo-theme 'icons)
 (setq neo-smart-open t)
+(setq neo-window-width 40)
 
 (defun neotree-project-dir ()
   "Open NeoTree using the git root."

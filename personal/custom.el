@@ -48,6 +48,10 @@
               (neotree-find file-name)))
       (message "Could not find git project root."))))
 
+;; Switch project in Neotree
+;; https://github.com/syl20bnr/spacemacs/issues/5682
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
 ;;;; ruby-mode
 ;; Disable insertion of coding header
 (setq enh-ruby-add-encoding-comment-on-save nil)

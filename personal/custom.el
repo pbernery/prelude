@@ -23,7 +23,8 @@
 (ivy-mode 1)
 
 ;;;; ibuffer
-(ibuffer-projectile-set-filter-groups)
+(with-eval-after-load 'ibuffer-mode
+  (ibuffer-projectile-set-filter-groups))
 
 ;;;; neotree
 (setq neo-theme 'icons)

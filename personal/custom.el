@@ -5,8 +5,10 @@
 ;; Packages
 (prelude-require-packages '(all-the-icons
                             all-the-icons-ivy
+                            company-tern
                             ember-mode
                             ibuffer-projectile
+                            js2-refactor
                             magit-todos
                             neotree
                             spacemacs-theme))
@@ -26,6 +28,19 @@
 ;;;; ibuffer
 (with-eval-after-load 'ibuffer-mode
   (ibuffer-projectile-set-filter-groups))
+
+;;;; js2-mode
+
+;; refactor
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
+(js2r-add-keybindings-with-prefix "C-c C-r")
+(define-key js2-mode-map (kbd "C-k") #'js2r-kill)
+
+;; completion
+(add-to-list 'company-backends 'company-tern)
+(add-hook 'js2-mode-hook (lambda ()
+                           (tern-mode)
+                           (company-mode)))
 
 ;;;; magit
 (magit-todos-mode)
@@ -83,7 +98,7 @@
     ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
  '(package-selected-packages
    (quote
-    (magit-todos markdown-mode spacemacs-themes zop-to-char zenburn-theme which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line operate-on-number move-text magit imenu-anywhere ibuffer-projectile hl-todo guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell ember-mode editorconfig easy-kill discover-my-major diminish diff-hl crux browse-kill-ring beacon anzu ace-window)))
+    (js2-refactor company-tern magit-todos markdown-mode spacemacs-themes zop-to-char zenburn-theme which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line operate-on-number move-text magit imenu-anywhere ibuffer-projectile hl-todo guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell ember-mode editorconfig easy-kill discover-my-major diminish diff-hl crux browse-kill-ring beacon anzu ace-window)))
  '(safe-local-variable-values
    (quote
     ((eval setq js-switch-indent-offset 0)

@@ -22,6 +22,13 @@
 ;; PACKAGE CONFIGURATION
 ;;;;
 
+;;;; hs-minor-mode
+(global-unset-key (kbd "s-f"))
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+(add-hook 'hs-minor-mode-hook
+          (lambda ()
+            (define-key hs-minor-mode-map (kbd "s-f") 'hs-toggle-hiding)))
+
 ;;;; ivy
 (ivy-mode 1)
 

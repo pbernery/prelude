@@ -51,7 +51,7 @@
                            (company-mode)))
 
 ;;;; magit
-(magit-todos-mode)
+;; (magit-todos-mode)
 
 ;;;; neotree
 (setq neo-theme 'icons)

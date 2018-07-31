@@ -26,8 +26,9 @@
 (ivy-mode 1)
 
 ;;;; ibuffer
-(with-eval-after-load 'ibuffer-mode
-  (ibuffer-projectile-set-filter-groups))
+(add-hook 'ibuffer-mode-hook
+          (lambda ()
+            (ibuffer-projectile-set-filter-groups)))
 
 ;;;; js2-mode
 

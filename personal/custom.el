@@ -56,6 +56,9 @@
 ;;;; magit
 ;; (magit-todos-mode)
 
+;;;; markdown
+(setq markdown-command "/usr/local/bin/multimarkdown")
+
 ;;;; neotree
 (setq neo-theme 'icons)
 (setq neo-smart-open t)

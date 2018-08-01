@@ -81,6 +81,11 @@
 ;; https://github.com/syl20bnr/spacemacs/issues/5682
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
+
+;;;; org-mode
+;; fontify code in code blocks
+(setq org-src-fontify-natively t)
+
 ;;;; ruby-mode
 ;; Disable insertion of coding header
 (setq enh-ruby-add-encoding-comment-on-save nil)

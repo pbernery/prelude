@@ -13,6 +13,9 @@
                             neotree
                             spacemacs-theme))
 
+;; Disable Guru mode
+(setq prelude-guru nil)
+
 ;; Set theme
 ;; (setq prelude-theme nil)
 ;; (load-theme 'spacemacs-light)

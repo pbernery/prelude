@@ -8,6 +8,10 @@
 ;; Window size
 (when window-system (set-frame-size (selected-frame) 104 58))
 
+;; Appearance (works with emacs-plus)
+(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+(add-to-list 'default-frame-alist '(ns-appearance . dark))
+
 ;; macOS specific
 (setq-default mac-right-option-modifier nil)
 

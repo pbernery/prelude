@@ -3,7 +3,8 @@
 ;;;;
 
 ;; Packages
-(prelude-require-packages '(all-the-icons
+(prelude-require-packages '(ag
+                            all-the-icons
                             all-the-icons-ivy
                             company-tern
                             ember-mode
@@ -117,7 +118,7 @@
     ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
  '(package-selected-packages
    (quote
-    (counsel helm ivy swiper dockerfile-mode js2-refactor company-tern magit-todos markdown-mode spacemacs-themes zop-to-char zenburn-theme which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line operate-on-number move-text magit imenu-anywhere ibuffer-projectile hl-todo guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell ember-mode editorconfig easy-kill discover-my-major diminish diff-hl crux browse-kill-ring beacon anzu ace-window)))
+    (ag counsel helm ivy swiper dockerfile-mode js2-refactor company-tern magit-todos markdown-mode spacemacs-themes zop-to-char zenburn-theme which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line operate-on-number move-text magit imenu-anywhere ibuffer-projectile hl-todo guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell ember-mode editorconfig easy-kill discover-my-major diminish diff-hl crux browse-kill-ring beacon anzu ace-window)))
  '(safe-local-variable-values
    (quote
     ((eval setq js-switch-indent-offset 0)

@@ -26,6 +26,9 @@
 ;; PACKAGE CONFIGURATION
 ;;;;
 
+;;;; flyspell / ispell
+(ispell-change-dictionary "french")
+
 ;;;; hs-minor-mode
 (global-unset-key (kbd "s-f"))
 (add-hook 'prog-mode-hook #'hs-minor-mode)

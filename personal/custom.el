@@ -64,7 +64,7 @@
                            (company-mode)))
 
 ;;;; magit
-;; (magit-todos-mode)
+(magit-todos-mode)
 
 ;;;; markdown
 (setq markdown-command "/usr/local/bin/multimarkdown")

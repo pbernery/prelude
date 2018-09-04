@@ -128,6 +128,17 @@
 (define-key prelude-mode-map (kbd "s-/") 'comment-or-uncomment-region-or-line)
 
 (global-set-key (kbd "M-t") 'neotree-project-dir)
+(global-set-key (kbd "M-[")
+                (lambda (b e n)
+                  (interactive "r\nP")
+                  (indent-rigidly-left-to-tab-stop b e)
+                  (setq deactivate-mark nil)))
+
+(global-set-key (kbd "M-]")
+                (lambda (b e n)
+                  (interactive "r\nP")
+                  (indent-rigidly-right-to-tab-stop b e)
+                  (setq deactivate-mark nil)))
 
 ;; Custom configuration
 

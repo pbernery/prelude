@@ -30,6 +30,9 @@
 ;; PACKAGE CONFIGURATION
 ;;;;
 
+;;; all-the-icons-ivy
+(all-the-icons-ivy-setup)
+
 ;;; apib-mode
 (add-to-list 'auto-mode-alist '("\\.apib\\'" . apib-mode))
 

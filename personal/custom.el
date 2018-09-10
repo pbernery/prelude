@@ -39,9 +39,6 @@
 ;;; emacs-refactor
 (define-key prog-mode-map (kbd "M-RET") 'emr-show-refactor-menu)
 
-;;;; flyspell / ispell
-(ispell-change-dictionary "french")
-
 ;;;; hs-minor-mode
 (global-unset-key (kbd "s-f"))
 (add-hook 'prog-mode-hook #'hs-minor-mode)
@@ -61,7 +58,6 @@
 
 ;; refactor
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
-(js2r-add-keybindings-with-prefix "C-c C-r")
 (define-key js2-mode-map (kbd "C-k") #'js2r-kill)
 
 ;; completion
@@ -115,7 +111,7 @@
 (setq enh-ruby-add-encoding-comment-on-save nil)
 (setq ruby-insert-encoding-magic-comment nil)
 
-;; Enable ruby refactor
+;; ruby-refactor
 (add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 
 ;;;; web-mode

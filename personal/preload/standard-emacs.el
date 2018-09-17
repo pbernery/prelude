@@ -17,3 +17,7 @@
 
 ;; Feature activation
 (global-linum-mode 1)
+
+;; Set the fonts for Emojis
+(set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend)
+(set-fontset-font t 'symbol "Apple Color Emoji" nil 'prepend)

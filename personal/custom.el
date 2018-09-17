@@ -7,7 +7,6 @@
                             all-the-icons
                             all-the-icons-ivy
                             apib-mode
-                            company-tern
                             edit-indirect
                             ember-mode
                             emr
@@ -61,11 +60,6 @@
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (define-key js2-mode-map (kbd "C-k") #'js2r-kill)
 
-;; completion
-(add-to-list 'company-backends 'company-tern)
-(add-hook 'js2-mode-hook (lambda ()
-                           (tern-mode)
-                           (company-mode)))
 
 ;;;; magit
 (magit-todos-mode)

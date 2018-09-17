@@ -18,6 +18,9 @@
 ;; Feature activation
 (global-linum-mode 1)
 
+;; Set default face
+(set-face-font 'default "Fira Code-13")
+
 ;; Set the fonts for Emojis
 (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend)
 (set-fontset-font t 'symbol "Apple Color Emoji" nil 'prepend)

@@ -96,7 +96,6 @@
 ;; https://github.com/syl20bnr/spacemacs/issues/5682
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
-
 ;;;; org-mode
 ;; fontify code in code blocks
 (setq org-src-fontify-natively t)
@@ -163,12 +162,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
  '(package-selected-packages
    (quote
-    (apib-mode all-the-icons-ivy helm-core helm-projectile spacemacs-theme edit-indirect a anaconda-mode avy company ghub git-commit projectile pythonic web-mode ruby-refactor emr ag counsel helm ivy swiper dockerfile-mode js2-refactor company-tern magit-todos markdown-mode spacemacs-themes zop-to-char zenburn-theme which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line operate-on-number move-text magit imenu-anywhere ibuffer-projectile hl-todo guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell ember-mode editorconfig easy-kill discover-my-major diminish diff-hl crux browse-kill-ring beacon anzu ace-window)))
+    (avy company dash flycheck ghub git-commit helm iedit ivy lsp-mode magit markdown-mode multiple-cursors projectile pythonic typescript-mode yasnippet zop-to-char zenburn-theme yari yaml-mode which-key web-mode volatile-highlights undo-tree tide spacemacs-theme smartrep smartparens smart-mode-line ruby-refactor rainbow-mode rainbow-delimiters operate-on-number neotree move-text magit-todos lsp-ruby lsp-javascript-typescript less-css-mode json-mode js2-refactor inf-ruby imenu-anywhere ibuffer-projectile helm-projectile guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser feature-mode expand-region exec-path-from-shell emr ember-mode elisp-slime-nav editorconfig edit-indirect easy-kill dockerfile-mode discover-my-major diminish diff-hl crux counsel company-tern company-lsp company-anaconda browse-kill-ring beacon apib-mode anzu anaphora all-the-icons-ivy ag ace-window a)))
  '(safe-local-variable-values
    (quote
     ((eval progn
@@ -177,8 +173,7 @@
             (concat
              (locate-dominating-file default-directory ".dir-locals.el")
              "node_modules/.bin/")))
-     (eval setq js-switch-indent-offset 0)
-     (flycheck-disabled-checkers emacs-lisp-checkdoc)))))
+     (eval setq js-switch-indent-offset 0)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

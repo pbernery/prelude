@@ -67,6 +67,8 @@
 
 ;;;; markdown
 (setq markdown-command "/usr/local/bin/multimarkdown")
+(with-eval-after-load 'markdown
+  (markdown-fontify-code-block-natively))
 
 ;;;; multiple-cursor
 (multiple-cursors-mode 1)

@@ -14,6 +14,7 @@
                             js2-refactor
                             magit-todos
                             neotree
+                            robe
                             ruby-refactor
                             spacemacs-theme
                             tide))
@@ -105,6 +106,10 @@
 (setq enh-ruby-add-encoding-comment-on-save nil)
 (setq ruby-insert-encoding-magic-comment nil)
 
+(add-hook 'ruby-mode-hook 'robe-mode)
+(eval-after-load 'company
+  '(push 'company-robe company-backends))
+
 ;; ruby-refactor
 (add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 
@@ -164,7 +169,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (avy company dash flycheck ghub git-commit helm iedit ivy lsp-mode magit markdown-mode multiple-cursors projectile pythonic typescript-mode yasnippet zop-to-char zenburn-theme yari yaml-mode which-key web-mode volatile-highlights undo-tree tide spacemacs-theme smartrep smartparens smart-mode-line ruby-refactor rainbow-mode rainbow-delimiters operate-on-number neotree move-text magit-todos lsp-ruby lsp-javascript-typescript less-css-mode json-mode js2-refactor inf-ruby imenu-anywhere ibuffer-projectile helm-projectile guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser feature-mode expand-region exec-path-from-shell emr ember-mode elisp-slime-nav editorconfig edit-indirect easy-kill dockerfile-mode discover-my-major diminish diff-hl crux counsel company-tern company-lsp company-anaconda browse-kill-ring beacon apib-mode anzu anaphora all-the-icons-ivy ag ace-window a)))
+    (robe avy company dash flycheck ghub git-commit helm iedit ivy lsp-mode magit markdown-mode multiple-cursors projectile pythonic typescript-mode yasnippet zop-to-char zenburn-theme yari yaml-mode which-key web-mode volatile-highlights undo-tree tide spacemacs-theme smartrep smartparens smart-mode-line ruby-refactor rainbow-mode rainbow-delimiters operate-on-number neotree move-text magit-todos lsp-ruby lsp-javascript-typescript less-css-mode json-mode js2-refactor inf-ruby imenu-anywhere ibuffer-projectile helm-projectile guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser feature-mode expand-region exec-path-from-shell emr ember-mode elisp-slime-nav editorconfig edit-indirect easy-kill dockerfile-mode discover-my-major diminish diff-hl crux counsel company-tern company-lsp company-anaconda browse-kill-ring beacon apib-mode anzu anaphora all-the-icons-ivy ag ace-window a)))
  '(safe-local-variable-values
    (quote
     ((eval progn
